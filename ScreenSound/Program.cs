@@ -16,4 +16,8 @@ musica2.Duracao = 150;
 albumRadioHead.AdicionarMusica(musica1);
 albumRadioHead.AdicionarMusica(musica2);
 
-albumRadioHead.ExibirMusicasDoAlbum();
+
+Banda radioHead = new Banda();
+radioHead.Nome = "Radio Head";
+radioHead.AdicionarAlbum(albumRadioHead);
+radioHead.ExibirDiscografia();

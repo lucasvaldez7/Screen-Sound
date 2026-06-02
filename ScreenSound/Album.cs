@@ -5,7 +5,7 @@
         private List<Musica> musicas = new List<Musica>();
         public string Nome { get; set; }
 
-        public int DuracaoTotal => musicas.Sum(m => m.Duracao); //pega todas as músicas da lista e soma a duração delas.
+        public int DuracaoTotal => musicas.Sum(m => m.Duracao); //Pega todas as músicas da lista e soma a duração delas.
         public void AdicionarMusica(Musica musica)
         {
             musicas.Add(musica);
