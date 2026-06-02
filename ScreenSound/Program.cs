@@ -1,23 +1,24 @@
 ﻿using ScreenSound;
 
-Album albumRadioHead = new Album();
+Banda radioHead = new Banda("RadioHead");
 
-albumRadioHead.Nome = "OK Computer";
 
-Musica musica1 = new Musica();
-musica1.Nome = "Let Down";
+Album albumRadioHead = new Album("OK Computer");
+
+Musica musica1 = new Musica(radioHead,"Let Down");
 musica1.Duracao = 120;
 
-Musica musica2 = new Musica();
-musica2.Nome = "Karma Police";
+Musica musica2 = new Musica(radioHead,"Karma Police");
 musica2.Duracao = 150;
-
+musica2.Disponivel = true;
 
 albumRadioHead.AdicionarMusica(musica1);
 albumRadioHead.AdicionarMusica(musica2);
 
 
-Banda radioHead = new Banda();
-radioHead.Nome = "Radio Head";
+
 radioHead.AdicionarAlbum(albumRadioHead);
 radioHead.ExibirDiscografia();
+
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
